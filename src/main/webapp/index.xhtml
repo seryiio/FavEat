@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>FavEat</title>
+</h:head>
+
+<h:body>
+	<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button.ui-button {
+	margin-right: .5rem;
+}
+
+body {
+	background-color: black;
+}
+
+.header {
+	margin-top: 10em;
+}
+
+.text {
+	color: white;
+}
+
+.card {
+	z-index: 1000;
+}
+</style>
+	<header class="header">
+		<div align="center">
+			<h1 class="text">FavEat</h1>
+		</div>
+	</header>
+
+	<div class="card" align="center">
+		<h5 class="text">Usuario</h5>
+		<p:inputText />
+		<h5 class="text">Contraseña</h5>
+		<p:password id="toggle" value="#{passwordView.password6}"
+			toggleMask="true" redisplay="true" />
+		<br />
+		<p:button value="Iniciar Sesion" styleClass="rounded-button ui-button-danger" href="foods"/>
+		<br/>
+		<p:button value="Olvide mi contraseña" styleClass="rounded-button ui-button-secondary" />
+	</div>
+
+</h:body>
+</html>
